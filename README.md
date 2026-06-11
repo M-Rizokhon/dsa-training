@@ -8,6 +8,8 @@ This repo is for practicing DSA, improving problem-solving skills, and tracking 
 
 ## Structure
 
+
+```text
 dsa-training/
 ├── problems/
 ├── notes.md
