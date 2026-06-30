@@ -1,14 +1,14 @@
 /*
-Pattern: Hash map
-Mistake: I solved the problem many times before, so no mistake. 
-Key idea: Store number-index pairs in a hash map and find the indices
-of two numbers that add up to target.
+Pattern: Two pointers
+Mistake: None, it's an easy problem. 
+Key idea: Walk i from 0 to n/2, and at each step, swap s[i]
+and its mirror position s[n-i-1]. This is equivalent to having a left pointer
+start at 0 and a right pointer start at n-1, moving toward each other —
+here the right index is just derived from i instead of tracked separately.
+
 
 Time: O(n)
-Space: O(n)
-
-Note: The program must be compiled with C++20 because it uses 
-unordered_map's "contains()" method.
+Space: O(1)
 */
 
 #include <iostream>
