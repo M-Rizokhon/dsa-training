@@ -16,7 +16,7 @@ public:
 
         grid[r][c] = '0';
 
-        // visit all neighbord
+        // visit all neighbors
         dfs(grid, r + 1, c);    // below
         dfs(grid, r - 1, c);    // above
         dfs(grid, r, c + 1);    // right
